@@ -2,10 +2,15 @@
 //
 
 #include <iostream>
+#include "Person.h"
 
 int main()
 {
-    std::cout << "Hello World!\n";
+	Person p1;
+	Person p2;
+	std::string name = p1.getName();
+
+
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
