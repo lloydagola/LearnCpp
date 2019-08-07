@@ -8,6 +8,9 @@ class Person
 public:
 	Person() = default;
 	Person(std::string _firstName, std::string _lastName);
+
+	~Person();
+
 	std::string getName();
 };
 

@@ -1,3 +1,4 @@
+#include <iostream>
 #include "Person.h"
 
 Person::Person(std::string _firstName, std::string _lastName) :
@@ -5,6 +6,12 @@ Person::Person(std::string _firstName, std::string _lastName) :
 	lastName(_lastName)
 {
 
+	std::cout << "Constructing " << getName() << std::endl;
+
+}
+
+Person::~Person() {
+	std::cout << "Destructing..." << std::endl;
 }
 
 std::string Person::getName() {
