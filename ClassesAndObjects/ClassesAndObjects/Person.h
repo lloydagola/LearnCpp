@@ -6,7 +6,7 @@ class Person
 	std::string lastName;
 
 public:
-	Person();
+	Person() = default;
 	Person(std::string _firstName, std::string _lastName);
 	std::string getName();
 };
