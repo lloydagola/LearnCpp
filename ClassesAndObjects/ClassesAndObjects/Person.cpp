@@ -1,7 +1,6 @@
 #include "Person.h"
 
-Person::Person(std::string _firstName, std::string _lastName) 
-	:
+Person::Person(std::string _firstName, std::string _lastName) :
 	firstName(_firstName),
 	lastName(_lastName)
 {

@@ -6,8 +6,8 @@
 
 int main()
 {
-	Person p1;
-	Person p2;
+	Person p1("Jack", "Black");
+	Person p2("Simon", "Sez");
 	std::string name = p1.getName();
 
 
