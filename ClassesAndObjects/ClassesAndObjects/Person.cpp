@@ -6,12 +6,12 @@ Person::Person(std::string _firstName, std::string _lastName) :
 	lastName(_lastName)
 {
 
-	std::cout << "Constructing " << getName() << std::endl;
+	std::cout << "Constructing Person " << getName() << std::endl;
 
 }
 
 Person::~Person() {
-	std::cout << "Destructing..." << std::endl;
+	std::cout << "Destructing Person " << std::endl;
 }
 
 std::string Person::getName() {
