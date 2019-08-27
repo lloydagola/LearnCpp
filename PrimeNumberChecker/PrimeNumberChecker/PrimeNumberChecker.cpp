@@ -3,7 +3,7 @@
 
 #include <iostream>
 
-bool isPrime(int number);
+bool isPrime(int const number);
 
 int main()
 {
@@ -25,7 +25,7 @@ int main()
 	return 0;
 }
 
-bool isPrime(int number) {
+bool isPrime(int const number) {
 	bool hasFactor = false;
 
 	for (int i = 2; i < number / 2; i++) {
