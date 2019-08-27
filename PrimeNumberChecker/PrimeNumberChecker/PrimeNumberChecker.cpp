@@ -3,30 +3,37 @@
 
 #include <iostream>
 
-int main()
-{
+bool isPrime(int number) {
 	bool hasFactor = false;
-	int number;
-	std::cout << "Please enter a number: ";
-	std::cin >> number;
 
-	for (int i = 2; i < number/2; i++) {
+	for (int i = 2; i < number / 2; i++) {
 		std::cout << "Checking " << i << "\n";
 
 		if (number % i == 0) {
 			std::cout << i << " is a factor\n";
 			hasFactor = true;
 			break;
-		}	
+		}
 	}
 
-	if (hasFactor == true) {
+	return hasFactor;
+}
+
+int main()
+{
+	
+	int number;
+	std::cout << "Please enter a number: ";
+	std::cin >> number;
+
+	if (isPrime(number) == true) {
 		std::cout << "Number is not prime!";
 	}
 	else {
 		std::cout << "Number is prime!";
 	}
 
+	
 
 
 	return 0;
