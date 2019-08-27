@@ -3,21 +3,7 @@
 
 #include <iostream>
 
-bool isPrime(int number) {
-	bool hasFactor = false;
-
-	for (int i = 2; i < number / 2; i++) {
-		std::cout << "Checking " << i << "\n";
-
-		if (number % i == 0) {
-			std::cout << i << " is a factor\n";
-			hasFactor = true;
-			break;
-		}
-	}
-
-	return hasFactor;
-}
+bool isPrime(int number);
 
 int main()
 {
@@ -37,6 +23,22 @@ int main()
 
 
 	return 0;
+}
+
+bool isPrime(int number) {
+	bool hasFactor = false;
+
+	for (int i = 2; i < number / 2; i++) {
+		std::cout << "Checking " << i << "\n";
+
+		if (number % i == 0) {
+			std::cout << i << " is a factor\n";
+			hasFactor = true;
+			break;
+		}
+	}
+
+	return hasFactor;
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
