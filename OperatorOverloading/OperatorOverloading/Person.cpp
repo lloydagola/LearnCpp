@@ -23,7 +23,7 @@ int Person::getArbitrary() const{
 	return arbitrary;
 }
 
-bool Person::operator<(int i) const{
+bool Person:: <(int i) const{
 	return arbitrary < i;
 }
 
