@@ -12,6 +12,7 @@ public:
 	T operator+=(T const& item) {
 		return total = total + item;
 	}
+
 	T getTotal() const {
 		return total;
 	}
